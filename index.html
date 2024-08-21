@@ -19,7 +19,9 @@
             theme: {
               extend: {
                 colors: {
-                  clifford: '#da373d',
+                  'btn-back':'rgb(231, 111, 81)',
+                  'hero-para':'rgba(0, 0, 0, 0.8)',
+                  'hero-back': 'rgba(231, 111, 81, 0.1)'
                 },
                 fontFamily:{
                   body:"poppins"
@@ -30,6 +32,43 @@
         </script>
     </head>
     <body class="font-body">
-
+       <!-- header section markup start -->
+        <header class="container mx-auto">
+         <!-- navbar section markup start -->
+         <div class="navbar">
+          <div class="navbar-start">
+            <a class="hover:cursor-pointer text-xl">Bike Dekho</a>
+          </div>
+          <div class="navbar-end">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+              <a class="btn bg-btn-back px-10 text-white">Login</a>
+              
+            </div>
+            <div class="dropdown ">
+              <div tabindex="0" role="button" class="btn lg:hidden">
+                <i class="fa-solid fa-bars  text-2xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu dropdown-content rounded-box z-[1] mt-3 shadow right-0">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+                <a class="btn bg-btn-back px-10 text-white">Login</a>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+         <!-- navbar section markup end -->
+        </header>
+       <!-- header section markup end -->
     </body>
 </html>
